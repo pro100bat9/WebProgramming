@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("preview/10c4d16274537eebd298fb065a5d368f1216a59a.jpg");
+}
+#main-block {
+    width: 100%;
+    display: flex;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    height: 80px;
+}
+.logo a {
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 28px;
+    color:  silver;
+    text-decoration: none;
+    cursor: pointer;
+}
+.csgo {
+    color: crimson;
+
+}
+.news {
+    color: cadetblue;
+}
+.menu {
+    width: 685px;
+    height: 80px;
+    float: left;
+}
+.menu ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.menu ul li a {
+    display: block;
+    width: 171px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    height: 55px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.menu ul li a:hover {
+    transition: all 0.5s ease;
+    background: deepskyblue;
+}
+.auth {
+    width: 100px;
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+}
+.auth p {
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.auth a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.auth a:hover {
+    transition: all 0.5s ease;
+    color: deepskyblue;
+}
+
+.news-wall{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 60%;
+    height: 20%;
+    min-height: 900px;
+    margin: auto;
+    border: 1px solid white;
+    align-self: center;
+}
+.news-wall-image{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+}
+.news-flag{
+    margin-right: 10px;
+    height: 15px;
+    width: 22px;
+}
+
+.flag{
+    height: 15px;
+    width: 22px;
+}
+
+.news-text{
+    font-size: 30px;
+    color: white;
+    flex: 1 1 auto;
+}
+
+.news-tc{
+    color: silver;
+    text-align: right;
+    line-height: 15px;
+}
+
+.news-recent{
+    color: slategrey;
+}
+
+.news-image{
+    flex: 0 0 auto;
+    margin-right: 10px;
+    height: 120px;
+    width: 180px;
+}
+
+.ranking{
+    display: flex;
+    margin-left: 70%;
+    margin-bottom: 5%;
+}
+
+
+.reset{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.col-box{
+    border-top: 0;
+}
+
+.rank{
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    font-size: 12px;
+    border: 1px solid white;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rankNum{
+    font-size: 20px;
+    margin-left: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+.teamImg{
+    max-width: 18px;
+    margin: 7px;
+}
+
+.text-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.matches-todays{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: 20%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-border-hide{
+    display: block;
+    margin-top:10%;
+    margin-left: 40%;
+}
+.hotmatch-box{
+    display: block;
+}
+
+.teambox{
+    display: flex;
+    padding: 3px 5px;
+    border: 1px solid white;
+    width: 150px;
+}
+
+.teamrow{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    height: 20px;
+}
+
+.gallery{
+    height: 1000px;
+    width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.standard-headline{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+
+.gallery-grid-con{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 725px;
+    height: 1000px;
+}
+
+.gallery-grid{
+    display: flex;
+    column-gap: 16px;
+    font-size: 12px;
+    padding: 16px;
+    height: 240px;
+    box-sizing: border-box;
+}
+.col{
+    position: relative;
+    padding-bottom: 33%;
+    height: 0;
+}
+
+.photo{
+    width: 100%;
+}
+
+.photo-name{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    bottom: 0;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+}
+
+.word{
+    margin-top: 40px;
+    margin-left: 150px;
+    color: white;
+}
+
+
