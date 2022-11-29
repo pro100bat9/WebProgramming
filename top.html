@@ -10,27 +10,31 @@
 <header>
 
 
-    <div class="logo">
-        <a href="index.html">
+    <nav class="navbar">
+        <div class="logo">
             <span class="csgo">Csgo</span>-<span class="news">News</span>.ru
-        </a>
-    </div>
-
-
-    <div class="menu">
-        <ul>
-            <li><a href="matches.html">Матчи</a></li>
-            <li><a href="top.html">Топ</a></li>
-            <li><a href="#">Статистика</a></li>
-            <li><a href="gallery.html">Галерея</a></li>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="matches.html">Матчи</a>
+            </li>
+            <li class="list-item">
+                <a href="top.html">Топ</a>
+            </li>
+            <li class="list-item">
+                <a href="gallery.html">Галерея</a>
+            </li>
         </ul>
-    </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
 
+    </nav>
 
-    <div class="auth">
-        <p><a href="#">Вход</a></p>
-        <p><a href="#">Регистрация</a></p>
-    </div>
+    <script src="menu.js"></script>
+
 </header>
 <div class="world-ranking">CS:GO World ranking on November 7th, 2022</div>
 
@@ -143,20 +147,18 @@
                     <td class="player-holder"><a class="pointer"><img src="https://img-cdn.hltv.org/playerbodyshot/Bq-o0nulU4G2xOGoLp5AfH.png?bg=3e4c54&amp;h=200&amp;ixlib=java-2.1.0&amp;rect=121%2C4%2C455%2C455&amp;w=200&amp;s=f5646109d18f30e22d1f558f47f83acc" class="playerPicture" title="Josh 'oSee' Ohm">
                         <div class="nick"><img src="/preview/AU.gif" class="gtSmartphone-only flag" title="United States">oSee</div>
                     </a></td>
-                    <td class="player-holder"><a class="pointer"><img src="https://img-cdn.hltv.org/playerbodyshot/9F0C5VgKD0pavgRgFrCDpf.png?bg=3e4c54&amp;h=200&amp;ixlib=java-2.1.0&amp;rect=117%2C8%2C486%2C486&amp;w=200&amp;s=2df0be161a3d777d1464f321632dd0ef" class="playerPicture" title="Mareks 'YEKINDAR' Gaļinskis">
-                        <div class="nick"><img src="/preview/LV.gif" class="gtSmartphone-only flag" title="Latvia">YEKINDAR</div>
+                    <td class="player-holder"><a class="pointer"><img src="https://img-cdn.hltv.org/playerbodyshot/9F0C5VgKD0pavgRgFrCDpf.png?bg=3e4c54&amp;h=200&amp;ixlib=java-2.1.0&amp;rect=117%2C8%2C486%2C486&amp;w=200&amp;s=2df0be161a3d777d1464f321632dd0ef" class="playerPicture" title="Mareks 'YEKINDAR' Gaļinskis" >
+                        <div class="nick"><img src="/preview/LV.gif" class="gtSmartphone-only flag" title="Latvia">YE</div>
                     </a></td>
                 </tr>
                 </tbody></table>
         </div>
     </div>
 </div>
-<div id="footer">
-    <div class="word">контакты</div>
-    <div class="word">о нас</div>
-    <div class="word">сотрудничество</div>
-    <div class="word">реклама</div>
-    <div class="word">вакансии(их нет)</div>
-</div>
+<footer class="footer">
+    <p class="perf"></p>
+</footer>
 </body>
+<script src="loadTime.js"></script>
+
 </html>

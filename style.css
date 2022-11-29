@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -9,28 +10,6 @@ body {
     width: 100%;
     display: flex;
 }
-header {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    justify-content: center;
-}
-
-.logo {
-    width: 200px;
-    float: left;
-    height: 80px;
-}
-.logo a {
-    display: block;
-    margin-left: 15px;
-    margin-top: 20px;
-    font-size: 28px;
-    color:  silver;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .csgo {
     color: crimson;
@@ -38,53 +17,6 @@ header {
 }
 .news {
     color: cadetblue;
-}
-.menu {
-    width: 685px;
-    height: 80px;
-    float: left;
-}
-.menu ul li {
-    list-style: none;
-    float: left;
-    text-align: center;
-}
-
-.menu ul li a {
-    display: block;
-    width: 171px;
-    text-decoration: none;
-    font-size: 17px;
-    color: white;
-    height: 55px;
-    padding-top: 25px;
-    cursor: pointer;
-}
-.menu ul li a:hover {
-    transition: all 0.5s ease;
-    background: deepskyblue;
-}
-.auth {
-    width: 100px;
-    float: left;
-    margin-left: 40px;
-    height: 80px;
-}
-.auth p {
-    margin-top: 12px;
-    text-align: center;
-    margin-bottom: 8px;
-
-}
-.auth a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-}
-.auth a:hover {
-    transition: all 0.5s ease;
-    color: deepskyblue;
 }
 
 .news-wall{
@@ -159,7 +91,6 @@ header {
     align-items: center;
     height: 35px;
     font-size: 12px;
-    border: 1px solid white;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -209,7 +140,8 @@ a{
 .teambox{
     display: flex;
     padding: 3px 5px;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    border-bottom: 1px solid gray;
     width: 150px;
 }
 
@@ -275,20 +207,35 @@ a{
     bottom: 0;
 }
 
-#footer{
-    display: flex;
-    width: 100%;
-    height: 100px;
-    background-color: black;
+/*#footer{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 100px;*/
+/*    background-color: black;*/
+/*    justify-content: center;*/
+/*}*/
+.footer{
+    font-size: 1.5rem;
+    color: white;
+    width: 95%;
+    text-align: center;
+    /*font-family: Chalkduster, fantasy;*/
+    margin-top: auto;
     justify-content: center;
 }
-
-
-.word{
-    margin-top: 40px;
-    margin-left: 150px;
-    color: white;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
+/*.word{*/
+/*    margin-top: 40px;*/
+/*    margin-left: 150px;*/
+/*    color: white;*/
+/*}*/
 
 .world-ranking{
     margin-left: 30%;
@@ -297,6 +244,10 @@ a{
     font-weight: 700;
     color: white;
     margin-top: 10px;
+}
+upcomingMatchesAll {
+    margin-left: 150px;
+    /*display: flex;*/
 }
 
 .ranked-team{
@@ -427,17 +378,20 @@ a{
 }
 
 .upcomingMatchesSection{
-    height: 1000px;
-    width: 725px;
+    height: 40%;
+    width: 45%;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.upcomingMatch{
+.upcomingMatch {
     cursor: pointer;
     display: flex;
-    width: 725px;
+    width: 100%;
+    padding: 0 16px;
+    height: 52px;
 
 }
 
@@ -448,16 +402,9 @@ a{
     color: white;
     font-size: 16px;
     padding-left: 16px;
-    height: 42px;
+    height: 20%;
     align-items: center;
     font-weight: 700;
-}
-
-.upcomingMatch{
-    display: flex;
-    cursor: pointer;
-    padding: 0 16px;
-    height: 52px;
 }
 
 .mach{
@@ -482,7 +429,7 @@ a{
     font-weight: 700;
     height: 20px;
     color: white;
-    width: 34px;
+    width: 10%;
 }
 
 .matchMeta{
@@ -493,7 +440,7 @@ a{
     font-weight: 700;
     height: 16px;
     text-align: center;
-    width: 34px;
+    width: 10%;
 
 }
 
@@ -558,7 +505,7 @@ a{
     font-weight: 400;
     height: 52px;
     max-width: calc(100% - 45px);
-    width: 421px;
+    width: 40%;
 }
 
 .matchTeamLogo {
@@ -601,65 +548,97 @@ a{
     font-weight: 400;
     height: 20px;
 }
+@media screen and (max-width: 600px){
+    .upcomingMatchesSection{
+        margin-left: 20px;
+        /*margin-right: auto;*/
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+    }
 
-@media screen and (max-width: 600px) {
-    header {
+}
+
+@media screen and (max-width: 600px){
+    .playerPicture{
+        width: 50px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .nick{
         display: flex;
-        width: 1100px;
-        height: 80px;
-        background-color: black;
-        justify-content: center;
+        align-items: center;
+        margin-left: 1px;
+        color: white;
     }
+
 }
-
-
 @media screen and (max-width: 600px){
-    .logo a {
-        display: block;
-        margin-left: 15px;
-        margin-top: 20px;
-        font-size: 32px;
-        color:  silver;
-        text-decoration: none;
+    .ranked-team{
+        margin-top: 8px;
         cursor: pointer;
+        /*display: block;*/
+        flex-direction: column;
     }
-
 }
-
 @media screen and (max-width: 600px){
-
-    .menu ul li a {
-        display: block;
-        width: 171px;
-        text-decoration: none;
+    .upcoming-headline{
+        margin-left: auto;
+        margin-right: auto;
         font-size: 30px;
         color: white;
-        height: 55px;
-        padding-top: 25px;
-        cursor: pointer;
+
     }
+
 }
 
 @media screen and (max-width: 600px){
-    .auth a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
+    .ranked-team{
+        margin-top: 8px;
         cursor: pointer;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .top-border-hide{
+        display: block;
+        margin-top:1px;
+        margin-left: 40%;
     }
 }
 
 @media screen and (max-width: 600px){
     .upcomingMatchesAll {
-        margin-left: 150px;
+        margin-left: 10px;
+        position: relative;
     }
+}
+
+@media screen and (max-width: 600px){
+    .matchEvent {
+        align-items: center;
+        color: white;
+        cursor: auto;
+        display: flex;
+        font-size: 10px;
+        font-weight: 400;
+        height: 52px;
+        width: 160px;
+        margin-left: 180px;
+    }
+
 }
 
 @media screen and (max-width: 600px){
     .headline-flex{
         display: flex;
-        width: 100%;
-        margin-left: 40%;
+        position: relative;
+        margin-top: 30px;
+        /*width: 100%;*/
+        /*margin-left: 40%;*/
     }
 }
 
@@ -669,11 +648,12 @@ a{
         display: flex;
         background-color: black;
         color: white;
-        font-size: 40px;
+        /*font-size: 30px;*/
         padding-left: 16px;
-        height: 42px;
+        /*height: 42px;*/
         align-items: center;
         font-weight: 700;
+        position: relative;
     }
 }
 
@@ -714,6 +694,18 @@ a{
 }
 
 @media screen and (max-width: 600px){
+    .matchInfo{
+        cursor: auto;
+        display: flex;
+        flex-direction: column;
+        height: 52px;
+        justify-content: center;
+        margin-right: 50px;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 600px){
     .matchTeamLogo {
         color: white;
         cursor: auto;
@@ -739,27 +731,48 @@ a{
 
 @media screen and (max-width: 600px){
     .upcomingMatch {
-        margin-top: 50px
+        margin-top: 40px;
+        height: 10px;
+        position: relative;
+        margin-left: 10px;
     }
 }
 
 @media screen and (max-width: 600px){
     .news-wall{
         background-color: rgba(0, 0, 0, 0.6);
-        width: 600px;
+        /*width: 600px;*/
         height: 20%;
         min-height: 900px;
         /*margin: auto;*/
         align-self: center;
-        margin-left: 150px;
+        margin-left: 100px;
+        margin-top: 20px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .matchTeam{
+        align-items: center;
+        color: white;
+        cursor: auto;
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+        height: 20px;
+        width: 1px;
     }
 
 }
 
 @media screen and (max-width: 600px){
     #main-block {
-        width: 1100px;
+        /*width: 600px;*/
+        position: relative;
         display: flex;
+        flex-direction: column;
     }
 }
 
@@ -774,8 +787,8 @@ a{
 @media screen and (max-width: 600px){
     .ranking{
         display: flex;
-        margin-left: 50%;
-        margin-bottom: 5%;
+        margin-left: 43%;
+        margin-bottom: 1%;
     }
 }
 
@@ -786,9 +799,9 @@ a{
         align-items: center;
         height: 35px;
         font-size: 32px;
-        border: 1px solid white;
         width: 170px;
         background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 10px;
     }
 }
 
@@ -824,8 +837,8 @@ a{
         text-decoration: none;
         color: white;
         font-size: 30px;
-        margin-left: 70%;
-        margin-top: 20%;
+        margin-left: 43%;
+        margin-top: 1%;
     }
 }
 
@@ -833,9 +846,9 @@ a{
     .teambox{
         display: flex;
         padding: 3px 5px;
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         width: 200px;
-        height: 90px;
+        height: 60px;
     }
 }
 
@@ -846,6 +859,7 @@ a{
         font-size: 25px;
         padding-top: 5px;
         height: 20px;
+        /*margin-top: 10%;*/
     }
 }
 
@@ -853,13 +867,113 @@ a{
     .world-ranking{
         margin-left: 30%;
         margin-bottom: 5px;
-        font-size: 40px;
+        font-size: 20px;
         /*font-weight: 700;*/
         color: white;
         margin-top: 10px;
-        width: 1100px;
+        /*width: 1100px;*/
+        position: relative;
     }
 
 }
+
+@media screen and (max-width: 600px){
+    .match{
+        color: white;
+        cursor: auto;
+        display: flex;
+        flex-grow: 1;
+        font-size: 12px;
+        font-weight: 400;
+        height: 52px;
+        max-width: calc(100% - 45px);
+        /*width: 421px;*/
+        margin-top: 20px;
+        position: relative;
+    }
+
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    /*height: 50px;*/
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+/*.logo{*/
+/*    width: 100%;*/
+/*    margin-left: 10px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: aqua;
+}
+.menu{
+    display: none;
+}
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+@media all and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        position: relative;
+    }
+    .navbar .logo{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        border-top: 1px solid white;
+    }
+    .active {
+        display: block;
+    }
+}
+
+/*.perf{*/
+/*    color: white;*/
+/*    justify-content: center;*/
+/*}*/
 
 

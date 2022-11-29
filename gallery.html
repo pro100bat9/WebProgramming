@@ -6,33 +6,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
 
 
-    <div class="logo">
-        <a href="index.html">
+    <nav class="navbar">
+        <div class="logo">
             <span class="csgo">Csgo</span>-<span class="news">News</span>.ru
-        </a>
-    </div>
-
-
-    <div class="menu">
-        <ul>
-            <li><a href="#">Матчи</a></li>
-            <li><a href="top.html">Топ</a></li>
-            <li><a href="#">Статистика</a></li>
-            <li><a href="gallery.html">Галерея</a></li>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="matches.html">Матчи</a>
+            </li>
+            <li class="list-item">
+                <a href="top.html">Топ</a>
+            </li>
+            <li class="list-item">
+                <a href="gallery.html">Галерея</a>
+            </li>
         </ul>
-    </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
 
+    </nav>
 
-    <div class="auth">
-        <p><a href="#">Вход</a></p>
-        <p><a href="#">Регистрация</a></p>
-    </div>
-
-</header>
-</header>
 <div class="gallery">
     <div id="main-block">
         <div class="standard-headline">Event gallery</div>
@@ -79,15 +77,12 @@
                         <div class="photo-name">IEM Rio Major 2022 Challengers Stage</div>
                     </div>
                 </div>
-
+    </div>
 </div>
-</div>
-<div id="footer">
-    <div class="word">контакты</div>
-    <div class="word">о нас</div>
-    <div class="word">сотрудничество</div>
-    <div class="word">реклама</div>
-    <div class="word">вакансии(их нет)</div>
-</div>
+    <footer class="footer">
+        <p class="perf"></p>
+    </footer>
 </body>
+<script src="loadTime.js"></script>
+
 </html>
