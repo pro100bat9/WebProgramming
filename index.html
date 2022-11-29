@@ -5,34 +5,35 @@
     <title>Csgo-News.ru</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+<!--    <script src="loadTime.js"></script>-->
+<!--    <script src="menu.js"></script>-->
 </head>
 <body>
-<header>
-
-
-    <div class="logo">
-        <a href="index.html">
-            <span class="csgo">Csgo</span>-<span class="news">News</span>.ru
-        </a>
-    </div>
-
-
-    <div class="menu">
-        <ul>
-            <li><a href="matches.html">Матчи</a></li>
-            <li><a href="top.html">Топ</a></li>
-            <li><a href="#">Статистика</a></li>
-            <li><a href="gallery.html">Галерея</a></li>
+    <nav class="navbar">
+        <div class="logo">
+               <span class="csgo">Csgo</span>-<span class="news">News</span>.ru
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="matches.html">Матчи</a>
+            </li>
+            <li class="list-item">
+                <a href="top.html">Топ</a>
+            </li>
+            <li class="list-item">
+                <a href="gallery.html">Галерея</a>
+            </li>
         </ul>
-    </div>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
 
+    </nav>
 
-    <div class="auth">
-        <p><a href="#">Вход</a></p>
-        <p><a href="#">Регистрация</a></p>
-    </div>
+<script src="menu.js"></script>
 
-</header>
 <div id="main-block">
     <div id="block-content">
     </div>
@@ -72,7 +73,7 @@
                 <a href="#" class="hotmatch-box" title="Csgo-news.ru recommended match - Elisa Invitational Fall 2022">
                     <div class="teambox">
                         <div class="teamrows">
-                            <div class="teamrow"><img src="/preview/ES.gif" class="flag" title="Spain"> <span class="team">Movistar Riders</span></div>
+                            <div class="teamrow"><img src="/preview/ES.gif" class="flag" title="Spain"> <span class="team">Movistar</span></div>
                             <div class="teamrow"><img src="/preview/CN.gif" class="flag" title="China"> <span class="team">TYLOO</span></div>
                         </div>
                     </div>
@@ -105,7 +106,7 @@
                     <div class="teambox">
                         <div class="teamrows">
                             <div class="teamrow"><img alt="Kosovo" src="/preview/DK.gif" class="flag" title="Denmark"> <span class="team">Astralis</span></div>
-                            <div class="teamrow"><img alt="Sweden" src="/preview/SE.gif" class="flag" title="Sweden"> <span class="team">Ninjas in Pyjamas</span></div>
+                            <div class="teamrow"><img alt="Sweden" src="/preview/SE.gif" class="flag" title="Sweden"> <span class="team">Ninjas</span></div>
                         </div>
                     </div>
                 </a>
@@ -271,14 +272,13 @@
     </div>
 
 </div>
-<div id="footer">
-    <div class="word">контакты</div>
-    <div class="word">о нас</div>
-    <div class="word">сотрудничество</div>
-    <div class="word">реклама</div>
-    <div class="word">вакансии(их нет)</div>
-</div>
 
-
+    <footer class="footer">
+        <p class="perf"></p>
+    </footer>
 </body>
+<script src="loadTime.js"></script>
+
+
+
 </html>
