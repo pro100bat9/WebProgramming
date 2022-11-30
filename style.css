@@ -223,13 +223,13 @@ a{
     margin-top: auto;
     justify-content: center;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+/*p {*/
+/*    display: block;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0px;*/
+/*    margin-inline-end: 0px;*/
+/*}*/
 
 /*.word{*/
 /*    margin-top: 40px;*/
@@ -971,9 +971,20 @@ upcomingMatchesAll {
     }
 }
 
+
 /*.perf{*/
 /*    color: white;*/
 /*    justify-content: center;*/
 /*}*/
 
+@media screen and (max-width: 600px){
+    .footer{
+        font-size: 1.5rem;
+        color: white;
+        width: 95%;
+        text-align: center;
+        margin-top: auto;
+        justify-content: center;
+    }
 
+}
