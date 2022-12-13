@@ -977,6 +977,11 @@ upcomingMatchesAll {
     background-color: black;
 }
 
+.date{
+    color: white;
+    margin-left: 10px;
+}
+
 .form-control{
     font-size: 20px;
 }
