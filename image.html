@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">
+    <span class="csgo">Csgo</span>-<span class="news">News</span>.ru
+  </div>
+  <ul class="nav-list" id="navi-list">
+    <li class="list-item">
+      <a href="matches.html">Матчи</a>
+    </li>
+    <li class="list-item">
+      <a href="top.html">Топ</a>
+    </li>
+    <li class="list-item">
+      <a href="gallery.html">Галерея</a>
+    </li>
+  </ul>
+  <div class="menu" id="toggle-button">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+
+</nav>
+
+<script src="menu.js"></script>
+
+<div class="gallery">
+  <div class="col">
+    <img src=" https://img-cdn.hltv.org/gallerypicture/iNth18hrCNFLQtMu8leGoR.jpg?ixlib=java-2.1.0&m=%2Fm.png&mw=1091&mx=202&my=4847&w=8192&s=1b7ad1ea5cdb2995baec7e526396de00" class="photo">
+  </div>
+  <div class="comments-bar">
+  <div class="container">
+    <form>
+<!--      <p id="alert" class="alertbox"></p>-->
+      <input type="text" class="form-control" placeholder="Comment" id="text_comment">
+      <button type="submit" id="btn_add_comment" class="btn btn-primary">Send</button>
+    </form>
+
+    <div id="js-discussion">
+      <ul id="list_comments"></ul>
+    </div>
+  </div>
+  </div>
+</div>
+<script src="comments.js"></script>
+</body>
+</html>

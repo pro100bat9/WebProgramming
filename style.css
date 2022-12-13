@@ -970,12 +970,47 @@ upcomingMatchesAll {
         display: block;
     }
 }
+.comment{
+    color:white;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: black;
+}
+
+.form-control{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 20px;
+}
 
 
-/*.perf{*/
-/*    color: white;*/
-/*    justify-content: center;*/
-/*}*/
+.comments{
+    width: 725px;
+    height: 484px;
+    /*margin-top: 280px;*/
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.comments-bar{
+    width: 725px;
+    margin-top: 250px;
+}
+.comments-logo{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+li{
+    background: rgb(30, 30, 30);
+    opacity: 1;
+}
+
+div{
+    font-family: 'Roboto', sans-serif;
+}
 
 @media screen and (max-width: 600px){
     .footer{
