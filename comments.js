@@ -9,11 +9,10 @@ console.log("commentblock.js loaded");
 
 commentSubmit.addEventListener('click', function(e) {
     e.preventDefault();
-    const d = new Date();
-    let time = d.toLocaleTimeString();
+    let unix_timestamp = Date.now();
+    let time = new Date(unix_timestamp).toLocaleString();
     let comment  = commentBox.value.trim();
     let newLI = document.createElement('li');
-
     localStorage.setItem(time, comment);
 
 
@@ -24,6 +23,7 @@ commentSubmit.addEventListener('click', function(e) {
         commentBox.value = '';
     }
 }, false);
+
 
 window.onload = function () {
     for (let i = 0; i < localStorage.length; i++) {

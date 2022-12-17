@@ -558,6 +558,11 @@ upcomingMatchesAll {
 
 }
 
+.playerPicture{
+    width: 200px;
+    height: 200px;
+}
+
 @media screen and (max-width: 600px){
     .playerPicture{
         width: 50px;
@@ -1028,3 +1033,26 @@ div{
     }
 
 }
+
+.columns{
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.stats-row{
+    display: flex;
+    justify-content: space-between;
+    border: solid #495867;
+    border-width: 1px 0 0;
+    padding: 7px;
+    font-size: 12px;
+    color: white;
+}
+
+.statistics{
+    display: flex;
+    justify-content: center;
+}
+
+
