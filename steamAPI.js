@@ -36,27 +36,66 @@ async function showData() {
     let totalkillsak47 = stats[20].value;
     let totalkillsaug = stats[21].value;
     let totalkillsfamas = stats[22].value;
+
+    // <div class="col stats-rows stclassNameNamed-box">
+    //     // <div class="dropup">
+    //     // classNameassNamediv class="" data-bs-toggle=className Кнопка выпадающего списка
+    //     // </div>
+    //     // <ul class="dropdown-menu" arclassNameNamebelledby="">
+    //     // <span>K/D Ratio</span><span>${kd}</span>
+    //     // </ul>
+    //     // </div>
+
+
     let kd = kdration.toFixed(2)
     console.log(kdration);
     let playerBox = `
         <div class="columns">
     <div class="col stats-rows standard-box">
-      <div class="stats-row"><span>K/D Ratio</span><span>${kd}</span></div>
-      <div class="stats-row"><span>Total kills</span><span>${totalkills}</span></div>
-      <div class="stats-row"><span>Total deaths</span><span>${totaldeaths}</span></div>
-      <div class="stats-row"><span>Total wins</span><span>${totalwins}</span></div>
-      <div class="stats-row"><span>total wins round</span><span>${totalwinspistolround}</span></div>
-      <div class="stats-row"><span>match damage</span><span>${lastmatchdamage}</span></div>
-      <div class="stats-row"><span>total kills elite</span><span>${totalkillselite}</span></div>
+      <div class="stats-row dropdown"><span class="">K/D Ratio</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty1</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${kd}</span></div>
+      <div class="stats-row dropdown"><span>Total kills</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty2</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totalkills}</span></div>
+      <div class="stats-row dropdown"><span>Total deaths</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty3</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totaldeaths}</span></div>
+      <div class="stats-row dropdown"><span>Total wins</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty4</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totalwins}</span></div>
+      <div class="stats-row dropdown"><span>wins round</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty5</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totalwinspistolround}</span></div>
+      <div class="stats-row dropudown"><span>damage</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${lastmatchdamage}</span></div>
+      <div class="stats-row dropdown"><span>total kills elite</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty7</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totalkillselite}</span></div>
     </div>
     <div class="col stats-rows standard-box">
-      <div class="stats-row"><span>total mvps</span><span>${totalmvps}</span></div>
-      <div class="stats-row"><span class="">totalhitsp250</span><span>${totalhitsp250}</span></div>
-      <div class="stats-row"><span class="">total kills nova</span><span>${totalkillsnova}</span></div>
-      <div class="stats-row"><span class="">total kills awp</span><span>${totalkillsawp}</span></div>
-      <div class="stats-row"><span>total kills ak47</span><span>${totalkillsak47}</span></div>
-      <div class="stats-row"><span>total kills aug</span><span>${totalkillsaug}</span></div>
-      <div class="stats-row"><span>total kills famas</span><span>${totalkillsfamas}</span></div>
+      <div class="stats-row dropdown"><span>total mvps</span>
+        <div id="drop" class="dropdown-menu"><h2>qwerty8</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+      <span>${totalmvps}</span></div>
+      <div class="stats-row dropdown"><span class="">totalhitsp250</span>
+          <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalhitsp250}</span></div>
+      <div class="stats-row dropdown"><span class="">total kills nova</span>
+                <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalkillsnova}</span></div>
+      <div class="stats-row dropdown"><span class="">kills awp</span>
+                <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalkillsawp}</span></div>
+      <div class="stats-row dropdown"><span>kills ak47</span>
+                <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalkillsak47}</span></div>
+      <div class="stats-row dropdown"><span>total kills aug</span>
+                <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalkillsaug}</span></div>
+      <div class="stats-row dropdown"><span>total kills famas</span>
+                <div id="drop" class="dropdown-menu"><h2>qwerty6</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+    <span>${totalkillsfamas}</span></div>
     </div>
   </div>
         `;
