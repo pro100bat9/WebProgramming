@@ -1055,4 +1055,25 @@ div{
     justify-content: center;
 }
 
+/*.dropup:hover > .dropdown-menu {*/
+/*    display: block;*/
+/*}*/
+.diagram{
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 40%;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
 
+#drop {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    font-size: 14px;
+    color: gold;
+}
+#drop h2 {
+    font-size: 16px;
+}
