@@ -1,3 +1,4 @@
+const applicationUrl = "http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=62AAFA6C35CD1F1F61093C1A3CEEAB4A&steamid="
 
 async function loadData(userId) {
 

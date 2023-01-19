@@ -13,7 +13,7 @@ commentSubmit.addEventListener('click', function(e) {
     let time = new Date(unix_timestamp).toLocaleString();
     let comment  = commentBox.value.trim();
     let newLI = document.createElement('li');
-    localStorage.setItem(time, comment);
+    localStorage.setItem(unix_timestamp, comment);
 
 
     if (commentBox.value.length > 1) {
@@ -30,7 +30,9 @@ window.onload = function () {
         let key = localStorage.key(i);
         let value = localStorage.getItem(key);
         let newLI = document.createElement('li');
-        let comment = `<p class="comment">${value}</p><p class="date"><b>Posted on: ${key}</b></p>`;
+        var keyInt = parseInt(key)
+        let time = new Date(keyInt).toLocaleString();
+        let comment = `<p class="comment">${value}</p><p class="date"><b>Posted on: ${time}</b></p>`;
         newLI.innerHTML = comment;
         commentList.appendChild(newLI);
     }
